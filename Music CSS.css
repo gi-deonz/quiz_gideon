@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #EFECE3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.player-container {
+    width: 360px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #181818;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Playlist */
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Each Song */
+.song-box {
+    display: flex;
+    align-items: center;
+    background: #202020;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Thumbnail */
+.thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Song Info */
+.song-info {
+    flex: 1;
+}
+
+.song-title {
+    font-size: 14px;
+    margin: 0 0 2px 0;
+}
+
+.artist {
+    font-size: 12px;
+    color: #aaa;
+    margin: 0;
+}
+
+/* Audio Player */
+audio {
+    width: 100px;
+    outline: none;
+    filter: invert(100%);
+}
